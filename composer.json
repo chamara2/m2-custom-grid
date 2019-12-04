@@ -1,5 +1,5 @@
 {
-    "name": "company/module-productgrid",
+    "name": "chamara2/m2-custom-grid",
     "description": "ProductGrid",
     "type": "magento2-module",
     "license": "proprietary",
@@ -18,5 +18,11 @@
         "files": [
             "registration.php"
         ]
+    },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/chamara2/m2-custom-grid.git"
     }
+  ]
 }
