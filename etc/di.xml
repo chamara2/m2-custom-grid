@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Company\ProductGrid\Api\CustomProductGridRepositoryInterface" type="Company\ProductGrid\Model\CustomProductGridRepository"/>
+	<preference for="Company\ProductGrid\Api\Data\CustomProductGridInterface" type="Company\ProductGrid\Model\Data\CustomProductGrid"/>
+	<preference for="Company\ProductGrid\Api\Data\CustomProductGridSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Company\ProductGrid\Model\ResourceModel\CustomProductGrid\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">company_productgrid_custom_product_grid</argument>
+			<argument name="resourceModel" xsi:type="string">Company\ProductGrid\Model\ResourceModel\CustomProductGrid\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="company_productgrid_custom_product_grid_listing_data_source" xsi:type="string">Company\ProductGrid\Model\ResourceModel\CustomProductGrid\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+</config>

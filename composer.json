@@ -1,0 +1,22 @@
+{
+    "name": "company/module-productgrid",
+    "description": "ProductGrid",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "chamarabuddika@yahoo.com",
+            "name": "ProductGrid"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Company\\ProductGrid\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

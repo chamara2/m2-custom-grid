@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Company_ProductGrid::custom_product_grid" sortOrder="10" title="custom_product_grid">
+					<resource id="Company_ProductGrid::custom_product_grid_save" sortOrder="10" title="Save custom_product_grid"/>
+					<resource id="Company_ProductGrid::custom_product_grid_delete" sortOrder="20" title="Delete custom_product_grid"/>
+					<resource id="Company_ProductGrid::custom_product_grid_update" sortOrder="30" title="Update custom_product_grid"/>
+					<resource id="Company_ProductGrid::custom_product_grid_view" sortOrder="40" title="View custom_product_grid"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

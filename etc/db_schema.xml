@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table comment="company_productgrid_custom_product_grid Table" engine="innodb" name="company_productgrid_custom_product_grid" resource="default">
+		<column comment="Entity Id" identity="true" name="custom_product_grid_id" nullable="false" padding="6" unsigned="false" xsi:type="smallint"/>
+		<constraint referenceId="PRIMARY" xsi:type="primary">
+			<column name="custom_product_grid_id"/>
+		</constraint>
+		<column identity="false" name="product_id" nullable="false" xsi:type="int"/>
+		<column name="copywriteinfo" nullable="true" xsi:type="text"/>
+		<column length="255" name="vpn" nullable="true" xsi:type="varchar"/>
+		<column length="255" name="sku" nullable="true" xsi:type="varchar"/>
+		<column name="creation_time" nullable="true" xsi:type="timestamp" on_update="false" default="CURRENT_TIMESTAMP"/>
+		<column name="update_time" nullable="true" xsi:type="timestamp" on_update="true" default="CURRENT_TIMESTAMP"/>
+	</table>
+</schema>

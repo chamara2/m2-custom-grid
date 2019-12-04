@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Company::top_level" module="Company_ProductGrid" resource="Magento_Backend::content" sortOrder="9999" title="Custom Products"/>
+		<add action="company_productgrid/customproductgrid/index" id="Company_ProductGrid::company_productgrid_custom_product_grid" module="Company_ProductGrid" parent="Company::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Custom Products"/>
+	</menu>
+</config>
