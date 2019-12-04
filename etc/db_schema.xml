@@ -5,7 +5,7 @@
 		<constraint referenceId="PRIMARY" xsi:type="primary">
 			<column name="custom_product_grid_id"/>
 		</constraint>
-		<column identity="false" name="product_id" nullable="false" xsi:type="int"/>
+		<column identity="false" name="product_id" nullable="false" xsi:type="varchar" length="255"/>
 		<column name="copywriteinfo" nullable="true" xsi:type="text"/>
 		<column length="255" name="vpn" nullable="true" xsi:type="varchar"/>
 		<column length="255" name="sku" nullable="true" xsi:type="varchar"/>
