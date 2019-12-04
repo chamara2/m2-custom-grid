@@ -18,11 +18,5 @@
         "files": [
             "registration.php"
         ]
-    },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/chamara2/m2-custom-grid.git"
     }
-  ]
 }
